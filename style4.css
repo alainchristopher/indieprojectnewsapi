@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Dinamit Bold;
+    src: url(dinamit_bold.ttf);
+}
+@font-face {
+    font-family: Gt Cinetype Mono;
+    src: url(gt-cinetype-mono.otf);
+}
+
+body{
+background-color: blue;
+color: white;
+/*font-family: 'Source Code Pro', monospace;*/
+font-family: Dinamit Bold;
+/* font-family: Gt Cinetype Mono; */
+font-size: 56px;   
+}
+
+p {
+  overflow: hidden;
+ position: relative; 
+ color:blue;
+ -webkit-text-stroke: 2px;
+ -webkit-text-stroke-color: whitesmoke;
+ width: 100vw;
+ height: 100%;
+ margin: 20px;
+ padding-bottom: 50px;
+ line-height: 1.5;
+ text-align: left;
+ transform: rotateZ(25deg);
+}

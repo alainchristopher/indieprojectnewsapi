@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Dinamit Bold;
+    src: url(dinamit_bold.ttf);
+}
+@font-face {
+    font-family: Gt Cinetype Mono;
+    src: url(gt-cinetype-mono.otf);
+}
+
+body{
+background-color: black;
+color: white;
+/*font-family: 'Source Code Pro', monospace;*/
+font-family: Dinamit Bold;
+/* font-family: Gt Cinetype Mono; */
+font-size: 76px;   
+transform:rotateZ(20deg);
+right:-300px;
+max-width:100%;
+}
+
+div {
+ overflow: hidden;
+ position: relative;
+ color:black;
+ -webkit-text-stroke: 1px;
+ -webkit-text-stroke-color: white;
+}
+div {
+ width: 100vw;
+ height: 100%;
+ margin: 20px;
+ padding-bottom: 50px;
+ line-height: 1.5;
+ text-align: left;
+ /* Starting position */
+ -moz-transform:translateY(100%);
+ -webkit-transform:translateY(100%);	
+ 
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 12s linear infinite;
+ -webkit-animation: scroll-left 12s linear infinite;
+ animation: scroll-left 12s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateY(1200%); }
+ 100% { -moz-transform: translateY(-500%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateY(1200%); }
+ 100% { -webkit-transform: translateY(-500%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateY(1200%); /* Browser bug fix */
+ -webkit-transform: translateY(1200%); /* Browser bug fix */
+ transform: translateY(1200%); 		
+ }
+ 100% { 
+ -moz-transform: translateY(-500%); /* Browser bug fix */
+ -webkit-transform: translateY(-500%); /* Browser bug fix */
+ transform: translateY(-500%); 
+ }
+ 
+}

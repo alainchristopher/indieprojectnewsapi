@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Dinamit Bold;
+    src: url(dinamit_bold.ttf);
+}
+
+body{
+background-color: black;
+color: white;
+/*font-family: 'Source Code Pro', monospace;*/
+font-family: Dinamit Bold;
+font-size: 36px;  
+margin-top:200px; 
+}
+
+p {
+ line-height: 1.5;
+padding:30px;
+ overflow: hidden;
+ position: relative;
+ color: white;
+ /* -webkit-text-stroke: 1px;
+ -webkit-text-stroke-color: white; */
+ border-style: solid, white;
+  border-width: 2px;
+  /* transform:rotateX(90deg); */
+  
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(40deg) rotateZ(20deg);
+    perspective: 1000px;
+    margin: auto;
+    position: relative;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+}
